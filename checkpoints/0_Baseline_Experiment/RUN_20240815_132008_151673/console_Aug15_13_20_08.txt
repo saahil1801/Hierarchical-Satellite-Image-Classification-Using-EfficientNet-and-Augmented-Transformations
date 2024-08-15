@@ -1,0 +1,14 @@
+============================================================
+New run started at 2024-08-15.13:20:01.176594
+sys.argv: "/Users/saahil/Desktop/Coding_Projects/DL/SatelliteImage using TL/main.py"
+============================================================
+The console stream is logged into /Users/saahil/sg_logs/console.log
+[WARNING]No module named 'pycocotools'
+/Users/saahil/Desktop/Coding_Projects/DL/SatelliteImage using TL/env1/lib/python3.9/site-packages/hydra/_internal/defaults_list.py:251: UserWarning: In 'training_hyperparams/imagenet_efficientnet_train_params': Defaults list is missing `_self_`. See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/default_composition_order for more information
+  warnings.warn(msg, UserWarning)
+
+NOTICE: 
+achieving EfficientNet's reported accuracy requires specific image resolution.
+Please verify image size is 224x224 for this specific EfficientNet configuration
+
+The console stream is now moved to checkpoints/0_Baseline_Experiment/RUN_20240815_132008_151673/console_Aug15_13_20_08.txt

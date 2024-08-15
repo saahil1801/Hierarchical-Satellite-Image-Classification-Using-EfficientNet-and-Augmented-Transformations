@@ -1,0 +1,57 @@
+============================================================
+New run started at 2024-08-12.23:23:09.310944
+sys.argv: "/Users/saahil/Desktop/Coding_Projects/DL/SatelliteImage using TL/env/lib/python3.9/site-packages/ipykernel_launcher.py --f=/Users/saahil/Library/Jupyter/runtime/kernel-v2-9608irDh4ZQj3H1T.json"
+============================================================
+The console stream is logged into /Users/saahil/sg_logs/console.log
+[WARNING]No module named 'pycocotools'
+[INFO] Getting file paths and shuffling
+[INFO] Configuring training and testing data
+[INFO] Creating ImageFolder's for training and validation datasets
+[INFO] training dataset contains 4786 samples...
+[INFO] validation dataset contains 422 samples...
+[INFO] test dataset contains 422 samples...
+[INFO] dataset contains 4 labels...
+[INFO] creating training and validation set dataloaders...
+/Users/saahil/Desktop/Coding_Projects/DL/SatelliteImage using TL/env/lib/python3.9/site-packages/hydra/_internal/defaults_list.py:251: UserWarning: In 'training_hyperparams/imagenet_efficientnet_train_params': Defaults list is missing `_self_`. See https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/default_composition_order for more information
+  warnings.warn(msg, UserWarning)
+
+NOTICE: 
+achieving EfficientNet's reported accuracy requires specific image resolution.
+Please verify image size is 224x224 for this specific EfficientNet configuration
+
+The console stream is now moved to checkpoints/0_Baseline_Experiment/RUN_20240812_232436_358147/console_Aug12_23_24_36.txt
+/Users/saahil/Desktop/Coding_Projects/DL/SatelliteImage using TL/env/lib/python3.9/site-packages/super_gradients/training/sg_trainer/sg_trainer.py:1749: UserWarning: Mixed precision training is not supported on CPU. Disabling mixed precision. (i.e. `mixed_precision=False`)
+  warnings.warn("Mixed precision training is not supported on CPU. Disabling mixed precision. (i.e. `mixed_precision=False`)")
+[2024-08-12 23:24:36] INFO - sg_trainer_utils.py - TRAINING PARAMETERS:
+    - Mode:                         Single GPU
+    - Number of GPUs:               0          (0 available on the machine)
+    - Full dataset size:            4786       (len(train_set))
+    - Batch size per GPU:           16         (batch_size)
+    - Batch Accumulate:             1          (batch_accumulate)
+    - Total batch size:             16         (num_gpus * batch_size)
+    - Effective Batch size:         16         (num_gpus * batch_size * batch_accumulate)
+    - Iterations per epoch:         299        (len(train_loader))
+    - Gradient updates per epoch:   299        (len(train_loader) / batch_accumulate)
+    - Model: EfficientNetB0  (4.01M parameters, 4.01M optimized)
+    - Learning Rates and Weight Decays:
+      - default: (4.01M parameters). LR: 0.0001 (4.01M parameters) WD: 1e-05, (4.01M parameters)
+
+/Users/saahil/Desktop/Coding_Projects/DL/SatelliteImage using TL/env/lib/python3.9/site-packages/super_gradients/training/utils/optimizers/rmsprop_tf.py:126: UserWarning: This overload of add is deprecated:
+	add(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add(Tensor other, *, Number alpha) (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1578.)
+  grad = grad.add(group["weight_decay"], p.data)
+[2024-08-12 23:53:07] INFO - base_sg_logger.py - Checkpoint saved in checkpoints/0_Baseline_Experiment/RUN_20240812_232436_358147/ckpt_best.pth
+[2024-08-12 23:53:07] INFO - sg_trainer.py - Best checkpoint overriden: validation Accuracy: 0.274881511926651
+[2024-08-13 00:20:54] INFO - base_sg_logger.py - Checkpoint saved in checkpoints/0_Baseline_Experiment/RUN_20240812_232436_358147/ckpt_best.pth
+[2024-08-13 00:20:54] INFO - sg_trainer.py - Best checkpoint overriden: validation Accuracy: 0.9881516695022583
+[2024-08-13 00:48:24] INFO - base_sg_logger.py - Checkpoint saved in checkpoints/0_Baseline_Experiment/RUN_20240812_232436_358147/ckpt_best.pth
+[2024-08-13 00:48:24] INFO - sg_trainer.py - Best checkpoint overriden: validation Accuracy: 0.9928910136222839
+[2024-08-13 02:18:13] INFO - base_sg_logger.py - Checkpoint saved in checkpoints/0_Baseline_Experiment/RUN_20240812_232436_358147/ckpt_best.pth
+[2024-08-13 02:18:13] INFO - sg_trainer.py - Best checkpoint overriden: validation Accuracy: 0.9976303577423096
+[2024-08-13 03:13:47] INFO - base_sg_logger.py - Checkpoint saved in checkpoints/0_Baseline_Experiment/RUN_20240812_232436_358147/ckpt_best.pth
+[2024-08-13 03:13:47] INFO - sg_trainer.py - Best checkpoint overriden: validation Accuracy: 1.0
+[2024-08-13 17:22:53] INFO - early_stopping.py - Monitored metric Accuracy did not improve in the last 20 records. Best score: 1.000. Signaling Trainer to stop.
+[2024-08-13 17:22:54] INFO - sg_trainer.py - Request to stop training has been received, stopping training
+[2024-08-13 17:22:54] INFO - sg_trainer.py - RUNNING ADDITIONAL TEST ON THE AVERAGED MODEL...
+  0%|          | 0/27 [00:00<?, ?it/s]Validating epoch 300:   0%|          | 0/27 [00:00<?, ?it/s]Validating epoch 300:   4%|▎         | 1/27 [00:01<00:50,  1.93s/it]Validating epoch 300:   7%|▋         | 2/27 [00:03<00:46,  1.88s/it]Validating epoch 300:  11%|█         | 3/27 [00:05<00:44,  1.87s/it]Validating epoch 300:  15%|█▍        | 4/27 [00:07<00:43,  1.87s/it]Validating epoch 300:  19%|█▊        | 5/27 [00:09<00:40,  1.85s/it]Validating epoch 300:  22%|██▏       | 6/27 [00:11<00:38,  1.84s/it]Validating epoch 300:  26%|██▌       | 7/27 [00:12<00:36,  1.85s/it]Validating epoch 300:  30%|██▉       | 8/27 [00:14<00:35,  1.86s/it]Validating epoch 300:  33%|███▎      | 9/27 [00:16<00:34,  1.91s/it]Validating epoch 300:  37%|███▋      | 10/27 [00:18<00:32,  1.89s/it]Validating epoch 300:  41%|████      | 11/27 [00:20<00:29,  1.87s/it]Validating epoch 300:  44%|████▍     | 12/27 [00:22<00:27,  1.86s/it]Validating epoch 300:  48%|████▊     | 13/27 [00:24<00:26,  1.86s/it]Validating epoch 300:  52%|█████▏    | 14/27 [00:26<00:24,  1.88s/it]Validating epoch 300:  56%|█████▌    | 15/27 [00:27<00:22,  1.86s/it]Validating epoch 300:  59%|█████▉    | 16/27 [00:29<00:20,  1.86s/it]Validating epoch 300:  63%|██████▎   | 17/27 [00:31<00:18,  1.85s/it]Validating epoch 300:  67%|██████▋   | 18/27 [00:33<00:16,  1.84s/it]Validating epoch 300:  70%|███████   | 19/27 [00:35<00:14,  1.86s/it]Validating epoch 300:  74%|███████▍  | 20/27 [00:37<00:12,  1.85s/it]Validating epoch 300:  78%|███████▊  | 21/27 [00:38<00:10,  1.81s/it]Validating epoch 300:  81%|████████▏ | 22/27 [00:40<00:09,  1.81s/it]Validating epoch 300:  85%|████████▌ | 23/27 [00:42<00:07,  1.80s/it]Validating epoch 300:  89%|████████▉ | 24/27 [00:44<00:05,  1.81s/it]Validating epoch 300:  93%|█████████▎| 25/27 [00:46<00:03,  1.80s/it]Validating epoch 300:  96%|█████████▋| 26/27 [00:47<00:01,  1.81s/it]Validating epoch 300: 100%|██████████| 27/27 [00:48<00:00,  1.41s/it]Validating epoch 300: 100%|██████████| 27/27 [00:48<00:00,  1.80s/it]
